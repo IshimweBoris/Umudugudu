@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Create Account Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    /* Custom font weight for the heading */
+    .font-extrabold {
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body class="bg-white min-h-screen flex items-center justify-center p-4">
+  <main
+    class="w-full max-w-xs bg-white rounded-md shadow-md p-6 flex flex-col"
+    style="font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+  >
+    <div class="flex flex-col items-center mb-6">
+      <i class="fas fa-users text-blue-700 text-2xl mb-1"></i>
+      <h1 class="font-extrabold text-center text-black text-lg leading-tight">
+        Create Account
+      </h1>
+      <p class="text-center text-xs text-gray-600 mt-1">
+        Join our community platform
+      </p>
+    </div>
+
+    <form class="flex flex-col space-y-4 text-xs text-gray-700">
+      <label class="flex flex-col">
+        <span class="mb-1 text-[9px] text-gray-600">Full Name</span>
+        <input
+          type="text"
+          placeholder="Full Name"
+          class="border border-gray-200 rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-600"
+        />
+      </label>
+
+      <label class="flex flex-col">
+        <span class="mb-1 text-[9px] text-gray-600">National ID Number</span>
+        <input
+          type="text"
+          placeholder="National ID Number"
+          class="border border-gray-200 rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-600"
+        />
+      </label>
+
+      <label class="flex flex-col">
+        <span class="mb-1 text-[9px] text-gray-600">Phone Number</span>
+        <input
+          type="text"
+          placeholder="Phone Number"
+          class="border border-gray-200 rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-600"
+        />
+      </label>
+
+      <label class="flex flex-col">
+        <span class="mb-1 text-[9px] text-gray-600">Umudugudu</span>
+        <input
+          type="text"
+          placeholder="Umudugudu"
+          class="border border-gray-200 rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-600"
+        />
+      </label>
+
+      <label class="flex flex-col">
+        <span class="mb-1 text-[9px] text-gray-600">Role</span>
+        <select
+          class="border border-gray-200 rounded-md px-3 py-2 text-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-600"
+          aria-label="Role"
+        >
+          <option disabled selected>Select your role</option>
+          <option>Role 1</option>
+          <option>Role 2</option>
+        </select>
+      </label>
+
+      <label class="flex flex-col relative">
+        <span class="mb-1 text-[9px] text-gray-600">Password</span>
+        <input
+          type="password"
+          placeholder="Password"
+          class="border border-gray-200 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-1 focus:ring-blue-600"
+        />
+        <i
+          class="far fa-eye absolute right-3 top-[38px] text-gray-400 cursor-pointer"
+          aria-hidden="true"
+        ></i>
+      </label>
+
+      <label
+        for="upload"
+        class="border border-gray-300 rounded-md h-20 flex flex-col items-center justify-center text-center text-xs text-gray-500 cursor-pointer"
+      >
+        <i class="fas fa-camera mb-1 text-gray-400"></i>
+        <span>Upload your ID card photo</span>
+        <span class="text-blue-600">Choose File or Take Photo</span>
+        <input type="file" id="upload" class="hidden" />
+      </label>
+
+      <label class="flex flex-col text-[9px] text-gray-400">
+        <span class="mb-1">Skills or Help Offer (Optional)</span>
+        <textarea
+          placeholder="Share your skills or ways you can help the community"
+          class="border border-gray-200 rounded-md w-full p-1 text-xs text-gray-400 resize-none"
+          rows="2"
+        ></textarea>
+      </label>
+
+      <button
+        type="submit"
+        class="bg-blue-600 text-white text-xs rounded-md py-2 mt-2 hover:bg-blue-700 transition"
+      >
+        Create Account
+      </button>
+    </form>
+
+    <p class="text-center text-[9px] text-gray-500 mt-3">
+      Already have an account?
+      <a href="#" class="text-blue-600 hover:underline">Sign in</a>
+    </p>
+  </main>
+</body>
+</html>
